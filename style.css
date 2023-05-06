@@ -1,0 +1,301 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#logo img{
+    width: 80px;
+    border-radius: 40px;
+    border: 2px solid rgb(42, 42, 205);
+    
+}
+#logo{
+    margin: auto 5px;
+    padding: 5px;
+
+}
+#navbarName{
+    margin: auto 0px;
+    padding-left: 5px;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: rgb(211, 239, 255);
+    /* justify-content: right; */
+
+    /* height: 90px; */
+    z-index: 2;
+    width: 100%;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    margin-left: auto;
+}
+#navbar ul li a{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(41, 189, 189);
+    
+    
+}
+#navbar ul li {
+    background-color: white;
+    
+    margin: 5px  10px;
+    padding: 10px 40px;
+    border-radius: 40px;
+    border: 1px solid aqua;
+}
+
+@media only screen and (max-width: 600px){
+    #bioText{
+        margin: 0px 50px;
+     }
+     #bioText p{
+        font-size: 20px;
+     }
+     #bioText h1{
+        font-size: 30px;
+     }
+}
+@media only screen and (max-width: 1155px){
+    #navbar ul li {
+        background-color: white;
+        
+        padding: 2px 20px; 
+        margin: 1px auto;
+        width: 100px;
+        height: 20px;
+        border-radius: 40px;
+        border: 1px solid aqua;
+        text-align: center;
+    }
+    #navbar ul{
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        list-style: none;
+        margin-left: auto;
+    }
+    #navbar ul li a{
+        font-size:x-small;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(41, 189, 189);
+        
+        
+    }
+}
+#navbar ul li a:hover{
+    color: rgb(84, 255, 255);
+}
+#home{
+    background-image: linear-gradient(to bottom right,rgb(102, 102, 239), rgb(247, 58, 222));
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    min-height: 500px;
+}
+#home ul li img{
+    width: 30px;
+    /* border: 1px solid blue; */
+}
+#home ul li{
+    list-style: none;
+}
+#socialLinks{
+    margin: auto 20px;
+    padding: auto;
+}
+#socialLinks ul li{
+    margin: 15px auto;
+}
+#bioText{
+    margin: auto 100px;
+    padding-left: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    color: aliceblue;
+    height: 300px;
+    animation-duration: 2s;
+    animation-name: entry;
+
+
+}
+@keyframes entry {
+    from{transform: translate(500px, 0px);}
+}
+#bioText h1{
+    margin: 20px 0px;
+    animation-name: intro;
+    animation-duration: 5s;
+}
+@keyframes intro {
+    from{} 
+    
+}
+
+#contact::before{
+    content: "";
+    z-index: -1;
+    height: 300px ;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(22, 234, 139), rgb(152, 200, 194));
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contact{
+    /* margin-top: 50px; */
+    position: relative;
+    padding-top: 90px;
+    justify-content: center;
+}
+#contact a img{
+    width: 75px;
+    
+}
+#mailsection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* #contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    
+}
+#contact-box{
+    /* padding: 5px 200px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box label{
+    font-size: 1.3rem;
+} */ 
+.h-primary{
+    font-size: 3rem;
+    padding: 40px;
+    color: black;
+}
+.center{
+    text-align: center;
+}
+
+.btn{
+    padding: 8px 24px;
+    background-color: rgb(59, 92, 254);
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+#skill{
+    padding-top: 90px;
+    margin:auto 60px;
+}
+#skill h3{
+    font-size: 30px;
+}
+#skill ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+/* #skill ul:hover{
+    animation-name: entry;
+    animation-duration: 2s;
+} */
+#skill li{
+    background-color: rgb(230, 229, 229);
+    font-size: 20px;
+    margin: 10px 20px;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+#project{
+    padding-top: 90px;
+}
+#project li a{
+    margin: 10px;
+    text-align: center;
+}
+#project li a img{
+    width: 20px;
+    margin: auto 5px;
+}
+#gitLink{
+    text-decoration: none;
+    background-color: rgb(212, 245, 165);
+    padding: 8px 24px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#project ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+}
+#project li{
+    background-color: cornsilk;
+    width: 300px;
+    margin: 10px 5%;
+    padding: 50px 5%;
+    border-radius: 20px;
+}
+#project li img{
+    width: 100%;
+}
+#project li p{
+    margin: 5px;
+    padding: 30px 0px;
+}
+.projectlinks{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+footer{
+    background-color: black;
+    color: white;
+    position: sticky;
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px 0px;
+    font-size: x-small;
+}
