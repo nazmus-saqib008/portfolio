@@ -77,12 +77,12 @@ body{
     #skill ul li{
         /* background-color: rgb(230, 229, 229); */
         /* background-color: black; */
-        font-size: 15px;
+        font-size: 12px;
         margin: 10px 10px;
-        width: 50px;
+        width: 60px;
         text-align: center;
         height: 20px;
-        padding: 2.5px 15px;
+        padding: 4px auto;
         border-radius: 20px;
     }
 }
