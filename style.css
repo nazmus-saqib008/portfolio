@@ -282,6 +282,7 @@ body{
     flex-direction: row;
     list-style: none;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #project li{
     background-color: cornsilk;
