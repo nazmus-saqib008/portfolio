@@ -41,6 +41,13 @@
     </section>
     <section id="skill">
         <h1 class="h-primary center">Skills</h1>
+        <h3>Sectors</h3>
+        <ul>
+            <li>MERN Stack Web Development</li>
+            <li>Machine Learning</li>
+            <li>Web Scraping</li>
+            <li>Data Visualisation</li>
+        </ul>
         <h3>Languages:</h3>
         <ul>
             <li>Java</li>
@@ -54,10 +61,22 @@
         <ul>
             <li>Node.JS</li>
             <li>React.JS</li>
-            <!-- <li>MongoDB</li> -->
+            <li>Express.JS</li>
+            <li>MongoDB</li>
             <li>Numpy</li>
             <li>Pandas</li>
+            <li>Sci-kit Learn</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Streamlit.py</li>
+            <li>SQL</li>
+            <li>BeautifulSoup.py</li>
         </ul>
+        <h3>Other tools:</h3>
+        <ul>
+            <li>Github</li>
+        </ul>
+        <hr>
     </section>
     <section id="project">
         <h1 class="h-primary center">Projects</h1>
@@ -97,12 +116,45 @@
             </li>
         </ul>
     </section>
-    <section id="contact">
+    <!-- <section id="contact">
         <h1 class="h-primary center">Contact Me</h1>
         <div id="mailsection">
             <a href="mailto:nazmussaqib87@yahoo.com"><img class="center" src="./src/mail.png" alt=""></a>
         </div>
+    </section> -->
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Me</h1>
+        <section id="contact-box">
+            <form action="https://nazmus-saqib-portfolio-backend.onrender.com//contact" method="post">
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="name">Name:&nbsp;</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:&nbsp;</label>
+                        <input type="number" name="phone" id="phone" placeholder="10 digit Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:&nbsp;</label>
+                        <input type="email" name="email" id="email" placeholder="example@abc.xyz">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:&nbsp;</label> 
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your Message"></textarea>
+                    </div>
+                </div>
+                <!-- <button onclick=handleOnSubmit()>Submit</button> -->
+                <input class="center btn" id="submit-btn" type="submit" value="Send" onclick=handleOnSubmit()>
+            </form>
+        </section>
     </section>
-    <footer class="center">&#169;Nazmus Saqib</footer>
+    <footer class="center">All Rights Reserved&nbsp;|&nbsp;&#169;Nazmus Saqib</footer>
+    <script>
+        const handleOnSubmit=()=>{
+            alert("Message Sent");
+        }
+    </script>
 </body>
 </html>

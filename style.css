@@ -79,7 +79,7 @@ body{
         /* background-color: black; */
         font-size: 14px;
         margin: 10px 10px;
-        width: 70px;
+        width: 100%;
         text-align: center;
         height: 20px;
         padding: 5px 10px;
@@ -169,7 +169,7 @@ body{
 #contact::before{
     content: "";
     z-index: -1;
-    height: 300px ;
+    height: 670px ;
     width: 100%;
     background-image: linear-gradient(to bottom right, rgb(22, 234, 139), rgb(152, 200, 194));
     position: absolute;
@@ -181,6 +181,7 @@ body{
     position: relative;
     padding-top: 90px;
     justify-content: center;
+    width: 100%;
 }
 #contact a img{
     width: 75px;
@@ -191,24 +192,31 @@ body{
     flex-direction: row;
     justify-content: center;
 }
-/* #contact-box input,
+#contact-box input,
 #contact-box textarea{
     width: 100%;
     padding: 0.5rem;
     border-radius: 0.5rem;
     font-size: 1.1rem;
     font-weight: 400;
-    
+    justify-content: center;
 }
 #contact-box{
     /* padding: 5px 200px; */
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin-left: 5%;
 }
 #contact-box label{
     font-size: 1.3rem;
-} */ 
+}
+
+#submit-btn{
+    width: 50%;
+    transform: translate(3%);
+}
 .h-primary{
     font-size: 3rem;
     padding: 40px;
@@ -244,6 +252,7 @@ body{
     justify-content: center;
 
 }
+
 /* #skill ul:hover{
     animation-name: entry;
     animation-duration: 2s;
@@ -252,11 +261,19 @@ body{
     background-color: rgb(230, 229, 229);
     font-size: 20px;
     margin: 10px 20px;
-    width: 100px;
+    width: auto;
     text-align: center;
     height: 30px;
-    padding: 5px 15px;
+    padding: 5px 55px;
     border-radius: 20px;
+}
+
+hr{
+    height: 5px;
+    background-color: rgb(104, 214, 195);
+    border-radius: 3px;
+    border: 0px;
+    margin: 20px;
 }
 #project{
     padding-top: 90px;
